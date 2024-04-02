@@ -18,6 +18,8 @@ proxy_addresses = {
 
 session = requests.session()
 
+# example change
+
 def scrape_title(url):
     response = session.get(url, proxies=proxy_addresses, headers=headers)
     if response.status_code == 200:
